@@ -12,7 +12,6 @@ translate.key = import.meta.env.VITE_DEEPL_KEY;
 
 const translateStr = async (s: String, transTo: string) => {
   const text = await translate(s, transTo);
-  console.log(text);
   return text;
 };
 
